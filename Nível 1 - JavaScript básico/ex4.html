@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+function exibir(){
+    let nome = prompt('Escreva seu nome: ')
+    let resultado = document.querySelector('section#resultado')
+    resultado.innerHTML = ` Olá, ${nome}! É um grande prazer te conhecer! 🖖  `
+}
+</script>
+<body>
+    <h1> Trabalhando com dados</h1>
+    <button onclick="exibir()" style="padding: 40px;"> Clique para começar</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+</body>
+</html>

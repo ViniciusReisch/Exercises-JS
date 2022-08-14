@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function calculadora(){
+        let number = Number(prompt('Escreva sua primera nota: '))
+        let resultado = document.querySelector('section#resultado')
+        resultado.innerHTML = 
+        `<p>O número a ser analisado aqui será o <strong> ${number} </strong></p><hr>
+            <p> O seu valor absoluto é ${Math.abs(number)} <\p> 
+                <p> A sua parte inteira é ${Math.trunc(number)} <\p> 
+                    <p> O valor inteiro mais próximo é ${Math.round(number)} <\p>  
+                        <p> A sua raiz quadrada é ${Math.sqrt(number)} <\p>  
+                            <p> A sua raiz cúbica é ${Math.cbrt(number)} <\p> 
+                                <p> O valor de ${number}² é ${number**2} <\p> 
+                                    <p> O valor de ${number}³ é ${number**3} <\p> `
+        }
+</script>
+<body>
+    <h1> Vários cálculos em JS </h1>
+    <button onclick="calculadora()" style="padding: 30px;"> Clique para calcular </button>
+    <section id="resultado">
+        <p> Resposta aqui </p>
+    </section>
+</body>
+</html>
