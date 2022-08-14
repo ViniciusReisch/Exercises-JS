@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function calcular(){ 
+            let numero1 = Number(prompt('Digite um numero'))
+            let resultado = document.querySelector('section#resultado')
+
+            resultado.innerHTML = `<p>O dobro de ${numero1} é ${numero1*2} e a metade é ${numero1/2}!</p>`
+        }
+    </script>
+<body>
+    <h1>Trabalhando com numeros</h1>
+    <button onclick="calcular()" style="padding: 40px;"> Clique aqui para calcular</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p> 
+    </section>
+</body>
+</html>

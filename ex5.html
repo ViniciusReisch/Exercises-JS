@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function somar(){
+        n1 = Number(prompt('Escreva o primeiro numero para somar: '))
+        n2 = Number(prompt('Escreva o segundo numero para somar: '))
+        resposta = document.querySelector('section#soma')
+        resposta.innerHTML = `A soma entre <mark>${n1}</mark> e <mark>${n2}</mark> é igual a <strong>${n1 + n2}!</strong>`
+    }
+</script>
+<body>
+    <h1>Somando dois números</h1>
+    <button style="padding: 40px;" onclick="somar()"> Iniciar soma !</button>
+    <section id="soma">
+        <p>O resultado vem aqui...</p>
+    </section>
+</body>
+</html>
